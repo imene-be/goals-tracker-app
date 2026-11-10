@@ -1,34 +1,49 @@
-# 📋 Liste des Objectifs (React Native)
+# Goals Tracker
 
-Ce projet est une application mobile développée en **React Native** avec **React Native Paper**, permettant de gérer une liste d'objectifs personnels. L'utilisateur peut ajouter, modifier et supprimer des objectifs facilement.
+Application mobile de liste d'objectifs personnels, développée avec React Native et Expo. On y ajoute, modifie et supprime ses objectifs en quelques gestes.
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-- 📌 **Ajouter un objectif**
-- ✏️ **Modifier un objectif existant**
-- ❌ **Supprimer un objectif avec une confirmation**
-- 🔔 **Messages d'erreur pour les champs vides**
-- 🏗️ **Interface moderne avec React Native Paper**
-- 📱 **Optimisé pour les mobiles**
+- Ajouter un objectif
+- Modifier un objectif existant
+- Supprimer un objectif, avec une fenêtre de confirmation
+- Message d'erreur si le champ est vide
+- Interface Material Design avec React Native Paper
 
-## 📦 Installation
+## Technologies
 
-1. **Cloner le projet**  
-   ```bash
-   git clone https://github.com/EmiPretty/listapp.git
-   cd listapp
+- React Native 0.76
+- Expo 52
+- React Native Paper
+- Hooks React (`useState`)
 
-2. Installer les dépendances
- npm install
-# ou
-yarn install
+## Structure
 
-# 🛠️ Technologies utilisées
+```
+App.js                 point d'entrée
+components/
+  Accueil.js           écran d'accueil
+  Liste.js             liste des objectifs : ajout, modification, suppression
+```
 
-React Native
-Expo
-React Native Paper (UI Material Design)
-React Hooks (useState)
+## Lancer le projet
 
-# lancer expo
+Prérequis : Node.js 18 ou plus récent et l'application **Expo Go** sur votre téléphone (ou un émulateur).
+
+```bash
+git clone https://github.com/imene-be/goals-tracker-app.git
+cd goals-tracker-app
+npm install
 npx expo start
+```
+
+Scannez ensuite le QR code affiché dans le terminal avec Expo Go.
+
+## Pistes d'amélioration
+
+- Conserver les objectifs entre deux ouvertures de l'application (stockage local)
+- Marquer un objectif comme atteint
+
+---
+
+Réalisé par [Imène Bentifraouine](https://imenebe.fr).
